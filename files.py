@@ -8,12 +8,12 @@ df = st.file_uploader("Upload the csv file: ",type = ['csv','xlsx','png'])
  #st.dataframe(df)
  
 st.subheader('Loading the CSV File')
-df = pd.read_csv("C:/Users/Sankalp/Downloads/Products.csv")
+df = pd.read_csv("Products.csv")
 if df is not None:
     st.table(df.head())
     
 st.subheader('Working with Images')
-st.image("C:/Users/Sankalp/Downloads/img.png")
+st.image("img.png")
 
 st.subheader("dealing with the images while uploading ")
 img_file = st.file_uploader("Upload the image file: ", type = ['png','jpeg'])
